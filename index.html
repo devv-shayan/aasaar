@@ -1,443 +1,166 @@
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AASAAR — the ayah is the premise</title>
-<meta name="description" content="AASAAR is a research workbench for the Quran. Tag a verse with a question, branch other students' ideas, and carry the strongest through scholar and scientist review.">
+<meta property="og:title" content="AASAAR: research infrastructure for the Quran">
+<meta property="og:description" content="We used to write the research papers. Let's publish again. Join the waitlist.">
+<meta property="og:image" content="https://devv-shayan.github.io/aasaar/media/reel-poster.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<title>AASAAR: research infrastructure for the Quran</title>
+<meta name="description" content="AASAAR is research infrastructure for the Quran: start from an ayah, branch it, and take it through a scholar and a scientist to a published research paper.">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-<link rel="shortcut icon" href="favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;900&family=Noto+Kufi+Arabic:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css">
-<script>document.documentElement.className = 'js';</script>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;700&family=Instrument+Serif&family=Amiri+Quran&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@800&text=AASAAR&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="mark" viewBox="0 0 100 100">
+  <polygon points="22,22 78,22 78,78 22,78" fill="none" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/>
+  <polygon points="50,8 92,50 50,92 8,50" fill="none" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/>
+  <polygon points="50,31 69,50 50,69 31,50" fill="currentColor"/>
+</symbol></svg>
 
-<a class="skip" href="#workbench">Skip to the workbench</a>
-
-
-<header class="nav" id="nav">
-  <a class="nav__mark" href="#top">AASAAR</a>
-  <nav class="nav__links" aria-label="Sections">
-    <a href="#workbench">Workbench</a>
-    <a href="#method">Method</a>
-    <a href="#refusals">Refusals</a>
-    <a href="#questions">Questions</a>
-  </nav>
-  <div style="display: flex; gap: 8px; align-items: center;">
-    <a class="btn btn--small" href="flyover.html" style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.18); color: #fff;">▶ 3D Film</a>
-    <a class="btn btn--small" href="mailto:salam@aasaar.tech?subject=AASAAR%20early%20access">Request early access</a>
-  </div>
+<header class="bar">
+  <a class="brand" href="#top"><svg width="24" height="24" aria-hidden="true"><use href="#mark"/></svg>AASAAR</a>
+  <nav aria-label="Page"><a href="#tag">Product</a><a href="#record">The record</a><a href="#refusals">Refusals</a><a href="#questions">Questions</a></nav>
+  <a class="btn btn--ghost" href="#reel-section">Watch the reel</a>
+  <a class="btn" href="#join">Join the waitlist</a>
 </header>
 
-<main>
+<main id="top">
+<section class="hero wrap">
+  <div>
+    <a class="note-bar" href="#reel-section">Muslims used to write the research papers. <b>Watch the 39-second reel</b></a>
+    <h1>Research infrastructure<br>for the <mark>Quran</mark></h1>
+    <p class="lead">Start from an ayah, branch it with other students, and take it through a scholar and a scientist to a published research paper.</p>
+    <form class="quick" data-waitlist data-source="hero" action="https://formspree.io/f/mdeelbjo" method="post">
+      <label class="sr" for="hero-email">Your email</label>
+      <input id="hero-email" name="email" type="email" required autocomplete="email" placeholder="you@example.com">
+      <button class="btn" type="submit">Join the waitlist</button>
+    </form>
+    <p class="status" role="status"></p>
+  </div>
+  <div class="stack" aria-hidden="true">
+    <div class="panel p-a"><div class="row"><b>Review</b><span class="tag">In review</span></div><div class="line"><span>Scholar · classical Arabic</span><em class="ok">Checked</em></div><div class="line"><span>Researcher · physics</span><em class="no">Model missing</em></div></div>
+    <div class="panel p-b"><div class="row"><b>Branches</b><span class="dim"><span id="hero-count">7</span> on 51:47</span></div><div class="line"><span>Metric drift in a non-uniform lattice</span><em>Physics</em></div><div class="line"><span>Mūsi‘ūn as a participle, not a past act</span><em>Arabic</em></div><div class="line"><span>If the sky is built, what holds it open?</span><em>Tafsir</em></div></div>
+    <div class="panel p-c"><div class="row"><b>Adh-Dhariyat 51:47</b><span class="tag tag--y">Aafaaq</span></div><p class="ayah" lang="ar" dir="rtl">وَالسَّمَاءَ بَنَيْنَاهَا بِأَيْدٍ وَإِنَّا لَمُوسِعُونَ</p><p class="tr">“We built the heaven with might, and We are expanding it.”</p><p class="q" id="hero-q">Does the widening have a preferred direction?</p><div class="row"><span class="dim">Example note · Physics</span><b class="go">Post the note</b></div></div>
+  </div>
+</section>
 
-  <!-- 1 · HERO -->
-  <section class="hero" id="top" data-bg="#191919" data-ink="#ffffff">
-    <div class="hero__main">
-      <h1>The ayah is<br>the premise.</h1>
-      <p class="hero__sub">AASAAR is a research workbench for the Quran. Tag a verse with a question, let other students branch it, and carry the strongest branch through a scholar and a scientist into a published paper.</p>
-      <a class="btn" href="mailto:salam@aasaar.tech?subject=AASAAR%20early%20access">Request early access</a>
-      <p class="hero__ayah">
-        <span class="hero__arabic" lang="ar" dir="rtl">أَوْ أَثَارَةٍ مِّنْ عِلْمٍ إِن كُنتُمْ صَادِقِينَ</span>
-        <span class="hero__ref">Al-Ahqaf 46:4 · “or some remnant of knowledge, if you are truthful”</span>
-      </p>
-    </div>
-    <nav class="swatches" aria-label="Chapters of this page">
-      <a class="swatch" style="--sw:#0c7866;--sw-ink:#ffffff" href="#premise"><span class="swatch__name">The premise</span><span class="swatch__note">Why this exists</span></a>
-      <a class="swatch" style="--sw:#2a2a2a;--sw-ink:#ffffff" href="#workbench"><span class="swatch__name">The workbench</span><span class="swatch__note">Four lenses on one ayah</span></a>
-      <a class="swatch" style="--sw:#1e4bd7;--sw-ink:#ffffff" href="#method"><span class="swatch__name">The method</span><span class="swatch__note">Spark, fork, review, paper</span></a>
-      <a class="swatch" style="--sw:#ffe927;--sw-ink:#111111" href="#output"><span class="swatch__name">The output</span><span class="swatch__note">A paper, not a post</span></a>
-      <a class="swatch" style="--sw:#d71e1e;--sw-ink:#ffffff" href="#refusals"><span class="swatch__name">The refusals</span><span class="swatch__note">Six things we will not do</span></a>
-    </nav>
-  </section>
+<section class="names wrap" aria-label="Scholars who published">
+  <span>Al-Khwarizmi<i>820</i></span><span>Al-Sufi<i>964</i></span><span>Ibn Sina<i>1025</i></span><span>Al-Biruni<i>1029</i></span><span>Al-Idrisi<i>1154</i></span><span>Al-Jazari<i>1206</i></span>
+</section>
 
-  <!-- 2 · PREMISE -->
-  <section class="chapter chapter--teal" id="premise" data-bg="#0c7866" data-ink="#ffffff">
-    <div class="wrap premise">
-      <div class="premise__text">
-        <h2 data-reveal>Not a book we defend.</h2>
-        <p class="lead" data-reveal>It is the book we think with. AASAAR exists to end the apology, the habit of waiting for a journal to announce a finding and then claiming the verse had it first. A verse is a premise. You start there, and you go and find the thing.</p>
-      </div>
-      <div class="premise__art" data-reveal>
-        <figure class="plate plate--leaf">
-          <img src="assets/leaf-with-arabic-prayers.jpg" width="1200" height="1806" alt="A single album leaf of gold Arabic prayer, framed by a border of painted flowers.">
-        </figure>
-        <figure class="plate plate--page">
-          <img src="assets/quran-page.jpg" width="700" height="566" alt="A parchment page of a tenth-century Quran, written in broad black Kufic script with gold roundels between the verses.">
-        </figure>
-        <p class="premise__cap">Two pages, ten centuries apart: a Kufic Quran and a leaf of prayers. The margin was always where the thinking happened.</p>
-      </div>
-    </div>
-  </section>
+<section class="center wrap">
+  <h2>Let’s <mark>publish</mark> again.</h2>
+  <p>Every time science finds something, the feed says the Quran said it 1400 years ago. If it did, why didn’t we find it first? AASAAR is where that work starts.</p>
+  <a class="btn" href="#join">Hold my place</a>
+</section>
 
-  <!-- 3 · WORKBENCH -->
-  <section class="chapter chapter--surface" id="workbench" data-bg="#242424" data-ink="#ffffff">
-    <div class="wrap">
-      <div class="mosaic">
+<section class="center center--line wrap">
+  <h2>Not a book we defend.<br>It is the book we <mark class="m2">think</mark> with.</h2>
+</section>
 
-        <div class="tile tile--photo t1" data-reveal>
-          <img src="assets/celestial-globe.jpg" width="3000" height="4000" alt="A seventeenth-century celestial globe, its printed gores painted with constellations, mounted on a dark wooden stand." loading="lazy" decoding="async">
-        </div>
+<section class="feature wrap" id="tag">
+  <div class="feature__head"><div><h2><mark>Tag</mark> an ayah</h2><p>Pick a verse and leave a question under it. Tap a root and read its whole range, not one translator’s choice.</p></div><a class="btn btn--ghost" href="#join">Start with one ayah</a></div>
+  <div class="feature__body">
+    <ul class="points"><li><b>Open to everyone</b>The first note needs no permission and no review. Nothing is gated.</li><li><b>Four kinds of note</b>A theory you cannot drop, a translation you think is too narrow, a point where you are stuck, or a research paper you want checked against a verse.</li><li><b>Four lenses</b>Every verse opens into the four prophetic tasks of 62:2. You pick the one you can actually work in.</li></ul>
+    <div class="stagebox" style="--pic:url(media/al-sufi-book-of-fixed-stars.jpg)"><div class="panel"><div class="row"><b>Your note on <span lang="ar" dir="rtl">لَمُوسِعُونَ</span></b><span class="tag tag--y">Theory</span></div><div class="root"><b lang="ar" dir="rtl">و س ع</b><span>to reach, to be wide enough for, to hold</span></div><p class="q">If the widening is a standing property of the sky and not an event, does it have a preferred direction?</p><div class="row"><span class="dim">Example note</span><b class="go">Post the note</b></div></div></div>
+  </div>
+  <div class="lenses">
+    <p><b>Aafaaq and Anfus</b>The cosmos and the self: astrophysics, matter, biology, the nervous system.</p>
+    <p><b>Kitab</b>Law, institutions, money and the state.</p>
+    <p><b>Tazkiya</b>Psychology and collective reform: building systems that purify a society, not just a solitary monk.</p>
+    <p><b>Hikmah</b>Timing, priority, and who can enforce what.</p>
+  </div>
+</section>
 
-        <div class="tile t2" data-reveal>
-          <h2>Four lenses,<br>one ayah</h2>
-          <p>Every verse opens into the four prophetic tasks of 62:2. You pick the one you can actually work in.</p>
-        </div>
+<section class="feature wrap">
+  <div class="feature__head"><div><h2><mark class="m2">Branch</mark> the reading</h2><p>Other students fork your note from physics, Arabic, medicine or tafsir, and the strongest reading rises.</p></div></div>
+  <div class="feature__body feature__body--flip">
+    <div class="stagebox" style="--pic:url(media/al-idrisi-nuzhat-al-mushtaq.jpg)"><div class="panel"><div class="row"><b>Does it have a preferred direction?</b><span class="dim">7 branches</span></div><div class="line"><span><i class="tag tag--g">Strongest</i> Metric drift in a non-uniform lattice</span><em>Physics</em></div><div class="line"><span>Mūsi‘ūn as a participle, not a past act</span><em>Arabic</em></div><div class="line"><span>If the sky is built, what holds it open?</span><em>Tafsir</em></div><div class="row"><span class="dim">Example thread</span><b class="go">Branch from this</b></div></div></div>
+    <ul class="points"><li><b>Support or refute</b>A heart is not evidence. There are no likes here.</li><li><b>No sect labels</b>A note carries one label: the verse it came from.</li><li><b>Your own field</b>Carry any reading into the discipline you can actually work in.</li></ul>
+  </div>
+</section>
 
-        <div class="tile tile--yellow t3" data-reveal>
-          <h3>Aafaaq &amp; Anfus</h3>
-          <p>The cosmos and the self: astrophysics, matter, biology, the nervous system. Begin with the expansion in 51:47.</p>
-        </div>
+<div class="pixels" data-dir="down" aria-hidden="true"></div>
+<section class="dark" id="reel-section">
+  <div class="wrap">
+    <div class="dark__head"><h2>Science finds it.<br><span>We post a comment.</span></h2><a class="btn btn--light" href="#join">Change that</a></div>
+    <video id="reel" src="media/aasaar-reel.mp4" poster="media/reel-poster.jpg" width="1280" height="720" muted loop controls playsinline preload="none"></video>
+    <div class="three"><p><b>The apology</b>Waiting for a journal, then claiming the verse had it first.</p><p><b>The premise</b>A verse is where the question starts, not where the headline ends.</p><p><b>The research paper</b>You go and find the thing, and you say what would prove you wrong.</p></div>
+    <h2 class="dark__line">The ayah is the premise.</h2>
+  </div>
+</section>
+<div class="pixels" data-dir="up" aria-hidden="true"></div>
 
-        <div class="tile tile--blue t4" data-reveal>
-          <h3>Kitab</h3>
-          <p>Law, institutions, money and the state. Begin with the seven-year cycle in Yusuf.</p>
-        </div>
+<section class="feature wrap">
+  <div class="feature__head"><div><h2><mark class="m3">Review</mark> by two people</h2><p>A scholar of classical Arabic checks the root and the context. A researcher checks the method and the maths. Both sign, or it doesn’t move.</p></div></div>
+  <div class="feature__body">
+    <ul class="points"><li><b>Scholar check</b>Every reading is held to the classical lexicons. Scope may widen. Roots do not move.</li><li><b>Field check</b>The method, the data and the maths, by someone who works there.</li><li><b>A mentor</b>Assigned once a note has been forked enough to become a draft.</li></ul>
+    <div class="stagebox" style="--pic:url(media/ibn-sina-canon.jpg)"><div class="panel"><div class="row"><b>Draft from 51:47</b><span class="tag">In review</span></div><div class="line"><span>Scholar · classical Arabic</span><em class="ok">Checked</em></div><div class="line"><span>Researcher · physics</span><em class="no">Model missing</em></div><p class="q">“Name the observation that would sink this. Until it can fail, it is not a model.”</p><span class="dim">Example review</span></div></div>
+  </div>
+</section>
 
-        <div class="tile tile--teal t5" data-reveal>
-          <h3>Tazkiya</h3>
-          <p>Psychology, cognitive de-priming, and collective reform—building systems that purify a society, not just a solitary monk.</p>
-        </div>
+<section class="feature wrap">
+  <div class="feature__head"><div><h2><mark class="m4">Publish</mark> a research paper</h2><p>What leaves the bench is a research paper, not a post. If a sentence isn’t yours, it doesn’t go out.</p></div></div>
+  <div class="feature__body feature__body--flip">
+    <div class="stagebox" style="--pic:url(media/al-biruni-kitab-al-tafhim.jpg)"><div class="panel panel--sheet"><span class="dim">Example research paper · Preprint</span><p class="sheet">The mūsi‘ūn condition: a boundary on metric growth</p><dl><dt>Baseline</dt><dd>Quran 51:47, root <span lang="ar" dir="rtl">و س ع</span></dd><dt>Method</dt><dd>Perturbed FLRW lattice, 10⁴ runs</dd><dt>Falsifier</dt><dd>Isotropy above 10⁻⁵ at z &lt; 2</dd><dt>Link</dt><dd>Permanent, with your name on it</dd></dl></div></div>
+    <ul class="points"><li><b>A method</b>How you did it, so someone else can check.</li><li><b>A falsifier</b>The observation that would prove you wrong.</li><li><b>A permanent link</b>Your name on the work, for anyone to build on.</li></ul>
+  </div>
+</section>
 
-        <div class="tile tile--red t6" data-reveal>
-          <h3>Hikmah</h3>
-          <p>Timing, priority, and who can enforce what. Begin with the treaty at Hudaybiyyah.</p>
-        </div>
+<section class="record wrap" id="record">
+  <div class="tiles">
+    <img src="media/al-khwarizmi-al-jabr.jpg" alt="Al-Jabr by Al-Khwarizmi" loading="lazy"><img src="media/al-sufi-book-of-fixed-stars.jpg" alt="Book of Fixed Stars by Al-Sufi" loading="lazy"><img src="media/al-zahrawi-al-tasrif.jpg" alt="Kitab al-Tasrif by Al-Zahrawi" loading="lazy"><img src="media/ibn-al-haytham-kitab-al-manazir.jpg" alt="Book of Optics by Ibn al-Haytham" loading="lazy"><img src="media/ibn-sina-canon.jpg" alt="Canon of Medicine by Ibn Sina" loading="lazy"><img src="media/al-biruni-kitab-al-tafhim.jpg" alt="Kitab al-Tafhim by Al-Biruni" loading="lazy"><img src="media/al-idrisi-nuzhat-al-mushtaq.jpg" alt="Tabula Rogeriana by Al-Idrisi" loading="lazy"><img src="media/al-jazari-ingenious-devices.jpg" alt="Ingenious Devices by Al-Jazari" loading="lazy"><img src="media/al-tusi-tusi-couple.jpg" alt="The Tusi couple by Al-Tusi" loading="lazy">
+  </div>
+  <div><h2>We used to write<br><mark>the research papers</mark></h2><p>Algebra, optics, surgery, astronomy, maps. Nobody on these pages was waiting for a headline.</p><p class="record__line">The margin was always where the thinking happened.</p><a class="more" href="#join">Pick up the work</a></div>
+</section>
 
-        <div class="tile t7" data-reveal>
-          <p class="tile__sentence">Tap a root and read its whole range, not one translator's choice.</p>
-          <div class="root">
-            <span class="root__ar" lang="ar" dir="rtl">و س ع</span>
-            <span class="root__gloss">wasu‘a: to reach, to be wide enough for, to hold.</span>
-          </div>
-          <p class="tile__use">51:47 has <span lang="ar" dir="rtl">لَمُوسِعُونَ</span>, the active participle: the ones making it wide.</p>
-        </div>
+<section class="refuse wrap" id="refusals">
+  <h2>Six things this bench <mark>refuses</mark></h2>
+  <div class="grid3">
+    <p><b>No miracle hunting</b>The verse comes first, or it is not here.</p><p><b>No numerology</b>A number needs a method, not a coincidence.</p><p><b>No sect labels</b>No Barelvi, Deobandi, Salafi, Shia or Sunni tags.</p><p><b>No twisting the Arabic</b>Checked against the classical lexicons, every time.</p><p><b>No ritual fiqh</b>This is not a fatwa desk.</p><p><b>No likes</b>You support, you refute, or you branch.</p>
+  </div>
+</section>
 
-        <div class="tile t8" data-reveal>
-          <p class="figure">46:4</p>
-          <p class="figure__cap">Al-Ahqaf, the verse this platform is named for. <span lang="ar" dir="rtl">أَثَارَةٍ</span> is a trace, something knowledge leaves behind.</p>
-        </div>
+<section class="faq wrap" id="questions">
+  <h2>Questions</h2>
+  <div>
+    <details><summary>Is this another tafsir app?</summary><p>No. Tafsir is a library you read backwards. AASAAR is a workbench you write forwards, and the output is a hypothesis with your name on it.</p></details>
+    <details><summary>Is this “Quran and science” miracles?</summary><p>No, and that is the whole point. Here the verse comes first and the research paper follows.</p></details>
+    <details><summary>Do I need to know Arabic?</summary><p>Not to start. Every word opens its root, its range and its uses, in English and Urdu.</p></details>
+    <details><summary>Who reviews a research paper?</summary><p>Two people who rarely sit in the same room. A scholar of classical Arabic, who checks the root and the context, and a researcher in the field, who checks the method, the data and the maths.</p></details>
+    <details><summary>Which school of thought is this for?</summary><p>None. There are no sect tags on the platform, and a post that carries one is removed. The only label on a note is the verse it came from.</p></details>
+    <details><summary>I am fourteen. Can I post?</summary><p>Yes. The first note needs no permission and no review.</p></details>
+    <details><summary>Does the app write the research paper for me?</summary><p>No. It asks the questions a supervisor would ask and won’t move on until you answer them.</p></details>
+  </div>
+</section>
 
-        <div class="tile t9" data-reveal>
-          <p class="tile__sentence">A note can be one of four things.</p>
-          <ul class="note-kinds">
-            <li>a theory you cannot drop</li>
-            <li>a translation you think is too narrow</li>
-            <li>a point where you are stuck</li>
-            <li>a paper you want checked against a verse</li>
-          </ul>
-        </div>
-
-        <div class="tile t10" data-reveal>
-          <p class="tile__sentence">Nothing is gated. A twelve-year-old's first note is published the moment she writes it—and the sharpest stuck points enter the live dissection queue with scholars and scientists.</p>
-        </div>
-
-        <div class="tile tile--photo t11" data-reveal>
-          <img src="assets/astrolabe.jpg" width="1600" height="2192" alt="A brass astrolabe with a pierced rete of star pointers, photographed flat against grey." loading="lazy" decoding="async">
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- 4 · METHOD -->
-  <section class="chapter chapter--blue hiw" id="method" data-bg="#1e4bd7" data-ink="#ffffff">
-    <div class="hiw__left">
-      <div class="hiw__clausewrap">
-        <h2 class="hiw__clause" data-stage="0" data-reveal>First:<br>you tag an ayah.</h2>
-        <p class="hiw__note" data-stage="0" data-reveal>The verse is on the page. Tap a word for its root, then leave a note under it: a sentence, a voice memo, or a page you are trying to understand.</p>
-      </div>
-      <p class="hiw__hint" id="hiw-hint">Drag the bar below, or use the arrow keys.</p>
-    </div>
-
-    <div class="hiw__right">
-      <div class="hiw__stage" data-reveal>
-
-        <article class="frag" data-ui data-stage="0">
-          <div class="frag__top">
-            <span class="frag__surah">Adh-Dhariyat 51:47</span>
-            <span class="frag__tag frag__tag--yellow">Aafaaq</span>
-          </div>
-          <p class="frag__ar" lang="ar" dir="rtl">وَالسَّمَاءَ بَنَيْنَاهَا بِأَيْدٍ وَإِنَّا لَمُوسِعُونَ</p>
-          <p class="frag__tr">“We built the heaven with might, and We are expanding it.”</p>
-          <div class="frag__composer">
-            <p class="frag__label">Your note on <span lang="ar" dir="rtl">لَمُوسِعُونَ</span></p>
-            <p class="frag__input">If the widening is a standing property of the sky and not an event, does the metric have a preferred direction after all?</p>
-            <div class="frag__row">
-              <span class="frag__chip">Theory</span>
-              <span class="frag__chip">Physics</span>
-              <span class="frag__gone">Voice</span>
-            </div>
-            <span class="frag__btn">Post the note</span>
-          </div>
-        </article>
-
-        <article class="frag" data-ui data-stage="1">
-          <div class="frag__top">
-            <span class="frag__surah">Adh-Dhariyat 51:47</span>
-            <span class="frag__tag">7 branches</span>
-          </div>
-          <p class="frag__note">“If the widening is a standing property of the sky, does the metric have a preferred direction?”</p>
-          <p class="frag__by">Ayesha K. · 17 · Lahore</p>
-          <ul class="branches">
-            <li><span>Physics</span>Metric drift in a non-uniform lattice</li>
-            <li><span>Arabic</span>Mūsi‘ūn as a participle, not a past act</li>
-            <li><span>Meta</span>If the sky is built, what holds it open?</li>
-          </ul>
-          <span class="frag__btn frag__btn--ghost">Branch from this</span>
-        </article>
-
-        <article class="frag" data-ui data-stage="2">
-          <div class="frag__top">
-            <span class="frag__surah">Draft · from 51:47</span>
-            <span class="frag__tag">In review</span>
-          </div>
-          <p class="frag__title">A directional reading of late-time acceleration</p>
-          <div class="gates">
-            <div class="gate">
-              <span class="gate__name">Panel A · classical Arabic</span>
-              <span class="gate__state gate__state--pass">Checked</span>
-            </div>
-            <div class="gate">
-              <span class="gate__name">Panel B · physics</span>
-              <span class="gate__state gate__state--wait">Model missing</span>
-            </div>
-          </div>
-          <p class="frag__feedback">“Name the observation that would sink this. Until it can fail, it is not a model.”</p>
-          <p class="frag__by">Reviewer: Dr. S. Iqbal · cosmology</p>
-        </article>
-
-        <article class="frag" data-ui data-stage="3">
-          <div class="frag__top">
-            <span class="frag__surah">Preprint</span>
-            <span class="frag__tag">Out</span>
-          </div>
-          <p class="frag__title">The mūsi‘ūn condition: a boundary on metric growth</p>
-          <p class="frag__by">A. Khan, B. Raza · 2026</p>
-          <dl class="paper">
-            <div><dt>Baseline</dt><dd>Qur'an 51:47, root و س ع</dd></div>
-            <div><dt>Method</dt><dd>Perturbed FLRW lattice, 10⁴ runs</dd></div>
-            <div><dt>Falsifier</dt><dd>Isotropy above 10⁻⁵ at z &lt; 2</dd></div>
-            <div><dt>Filed</dt><dd>arXiv · classical and quantum gravity</dd></div>
-          </dl>
-        </article>
-
-      </div>
-
-      <div class="hiw__control">
-        <p class="hiw__cap">One note, four states. The verse stays where you left it.</p>
-        <div class="slider">
-          <div class="track" aria-hidden="true"><span class="track__fill" id="track-fill"></span><span class="track__thumb" id="track-thumb"></span></div>
-          <input class="range" id="range" type="range" min="0" max="3" step="1" value="0" aria-label="Stage: first, then, next, last">
-        </div>
-        <ol class="hiw__names">
-          <li class="is-on">First</li>
-          <li>Then</li>
-          <li>Next</li>
-          <li>Last</li>
-        </ol>
-      </div>
-    </div>
-  </section>
-
-  <!-- 5 · OUTPUT -->
-  <section class="chapter chapter--yellow" id="output" data-bg="#ffe927" data-ink="#111111">
-    <div class="wrap output">
-      <h2 data-reveal>A paper, not a post.</h2>
-
-      <figure class="output__single">
-        <img src="assets/tilework-board.jpg" width="2304" height="1536" alt="Glazed tilework of blue, turquoise and gold, laid in a radial floral pattern at Shah-i-Zinda in Samarkand." loading="lazy" decoding="async">
-      </figure>
-
-      <div class="board" data-reveal aria-hidden="false">
-        <div class="cell" style="--c:0;--r:0;grid-column:1;grid-row:1"></div>
-        <div class="cell" style="--c:1;--r:0;grid-column:2;grid-row:1"></div>
-        <div class="cell" style="--c:2;--r:0;grid-column:3;grid-row:1"></div>
-        <div class="cell" style="--c:3;--r:0;grid-column:4;grid-row:1"></div>
-        <div class="cell" style="--c:4;--r:0;grid-column:5;grid-row:1"></div>
-        <div class="cell" style="--c:5;--r:0;grid-column:6;grid-row:1"></div>
-        <div class="cell" style="--c:0;--r:1;grid-column:1;grid-row:2"></div>
-        <div class="cell" style="--c:1;--r:1;grid-column:2;grid-row:2"></div>
-        <div class="cell" style="--c:2;--r:1;grid-column:3;grid-row:2"></div>
-        <div class="cell" style="--c:3;--r:1;grid-column:4;grid-row:2"></div>
-        <div class="cell" style="--c:4;--r:1;grid-column:5;grid-row:2"></div>
-        <div class="cell" style="--c:5;--r:1;grid-column:6;grid-row:2"></div>
-        <div class="cell" style="--c:0;--r:2;grid-column:1;grid-row:3"></div>
-        <div class="cell" style="--c:1;--r:2;grid-column:2;grid-row:3"></div>
-        <div class="cell" style="--c:2;--r:2;grid-column:3;grid-row:3"></div>
-        <div class="cell" style="--c:3;--r:2;grid-column:4;grid-row:3"></div>
-        <div class="cell" style="--c:4;--r:2;grid-column:5;grid-row:3"></div>
-        <div class="cell" style="--c:5;--r:2;grid-column:6;grid-row:3"></div>
-        <div class="cell" style="--c:0;--r:3;grid-column:1;grid-row:4"></div>
-        <div class="cell" style="--c:1;--r:3;grid-column:2;grid-row:4"></div>
-        <div class="cell" style="--c:2;--r:3;grid-column:3;grid-row:4"></div>
-        <div class="cell" style="--c:3;--r:3;grid-column:4;grid-row:4"></div>
-        <div class="cell" style="--c:4;--r:3;grid-column:5;grid-row:4"></div>
-        <div class="cell" style="--c:5;--r:3;grid-column:6;grid-row:4"></div>
-
-        <div class="cut cut--a"><p>A scholar checks the Arabic and the context before anything else happens.</p></div>
-        <div class="cut cut--b"><p>A researcher checks the method, the data and the maths.</p></div>
-        <div class="cut cut--c"><p>Both write down what is missing, and the draft waits.</p></div>
-        <div class="cut cut--d">
-          <a class="btn btn--small btn--dark" href="mailto:salam@aasaar.tech?subject=AASAAR%20early%20access">Request early access</a>
-        </div>
-      </div>
-
-      <p class="output__cap">Shah-i-Zinda, Samarkand: glazed tile and gold, laid by hand in the fourteenth century. The pattern is read through the gaps, the way a verse is read through a field.</p>
-    </div>
-  </section>
-
-  <!-- 6 · REFUSALS (a stack: each sheet covers the one under it) -->
-  <section class="chapter chapter--red refusals" id="refusals" data-bg="#d71e1e" data-ink="#ffffff">
-    <header class="wrap refusals__head">
-      <h2>What we refuse</h2>
-      <p class="lead">Six things this bench will not do. Each one is a habit the work exists to break, and the reason sits under every line.</p>
-    </header>
-    <div class="deck" id="refusals-deck">
-      <article class="deck__card">
-        <div class="deck__body">
-          <p class="deck__line">No miracle hunting.</p>
-          <p class="deck__note">We do not wait for a journal to announce a finding and then claim the verse had it. The verse comes first, or it is not here.</p>
-        </div>
-        <p class="deck__count">First of six</p>
-      </article>
-      <article class="deck__card">
-        <div class="deck__body">
-          <p class="deck__line">No numerology.</p>
-          <p class="deck__note">Letter counts, abjad sums and hidden-number readings are refused. A number needs a method, not a coincidence.</p>
-        </div>
-        <p class="deck__count">Second of six</p>
-      </article>
-      <article class="deck__card">
-        <div class="deck__body">
-          <p class="deck__line">No sect labels.</p>
-          <p class="deck__note">No Barelvi, Deobandi, Salafi, Shia or Sunni tags. A note carries one label: the verse it came from.</p>
-        </div>
-        <p class="deck__count">Third of six</p>
-      </article>
-      <article class="deck__card">
-        <div class="deck__body">
-          <p class="deck__line">No twisting the Arabic.</p>
-          <p class="deck__note">Every reading is checked against the classical lexicons and the Quran's own usage. Scope may widen. Roots do not move.</p>
-        </div>
-        <p class="deck__count">Fourth of six</p>
-      </article>
-      <article class="deck__card">
-        <div class="deck__body">
-          <p class="deck__line">No ritual fiqh.</p>
-          <p class="deck__note">Where you place your hands in prayer is not a research question. This is not a fatwa desk.</p>
-        </div>
-        <p class="deck__count">Fifth of six</p>
-      </article>
-      <article class="deck__card">
-        <div class="deck__body">
-          <p class="deck__line">No likes.</p>
-          <p class="deck__note">A heart is not evidence. You add support, or you refute, or you branch it into your own field.</p>
-        </div>
-        <p class="deck__count">Sixth of six</p>
-      </article>
-    </div>
-  </section>
-
-  <!-- 7 · QUESTIONS -->
-  <section class="chapter chapter--bg" id="questions" data-bg="#191919" data-ink="#ffffff">
-    <div class="wrap faq">
-      <div class="faq__head" data-reveal>
-        <h2>Questions</h2>
-        <p>What the workbench is, what it refuses, and who checks the work before it leaves.</p>
-      </div>
-      <div class="faq__list">
-        <details name="q" data-reveal>
-          <summary>Is this another tafsir app?<span class="plus" aria-hidden="true"></span></summary>
-          <p>No. Tafsir is a library you read backwards. AASAAR is a workbench you write forwards. The classical lexicons and the tafsir are linked and checked on every verse, but the output is a hypothesis with your name on it.</p>
-        </details>
-        <details name="q" data-reveal>
-          <summary>Is this “Quran and science” miracles?<span class="plus" aria-hidden="true"></span></summary>
-          <p>No, and that is the whole point. Waiting for a journal to announce a finding and then claiming the verse had it is the habit this platform exists to end. Here the verse comes first and the paper follows.</p>
-        </details>
-        <details name="q" data-reveal>
-          <summary>Do I need to know Arabic?<span class="plus" aria-hidden="true"></span></summary>
-          <p>Not to start. Every word opens its root, its range and its uses across the Quran, in English and Urdu. You will need a scholar's check before a draft leaves the lab, and the Arabic will teach itself to you on the way.</p>
-        </details>
-        <details name="q" data-reveal>
-          <summary>Who reviews a paper?<span class="plus" aria-hidden="true"></span></summary>
-          <p>Two people who rarely sit in the same room. A scholar of classical Arabic, who checks the root and the context, and a researcher in the field, who checks the method, the data and the maths.</p>
-        </details>
-        <details name="q" data-reveal>
-          <summary>I am fourteen. Can I post?<span class="plus" aria-hidden="true"></span></summary>
-          <p>Yes. The first note needs no permission and no review. Review starts when a note has been forked enough to become a draft, and a mentor is assigned at that point.</p>
-        </details>
-        <details name="q" data-reveal>
-          <summary>Which school of thought is this for?<span class="plus" aria-hidden="true"></span></summary>
-          <p>None. There are no sect tags on the platform, and a post that carries one is removed. The only label on a note is the verse it came from.</p>
-        </details>
-        <details name="q" data-reveal>
-          <summary>Does the app write the paper for me?<span class="plus" aria-hidden="true"></span></summary>
-          <p>No. It asks the questions a supervisor would ask and will not move on until you answer them. If a sentence in the draft is not yours, it does not go out.</p>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- 8 · ACCESS -->
-  <section class="chapter chapter--paper" id="access" data-bg="#ffffff" data-ink="#191919">
-    <div class="wrap cta">
-      <h2>Start with<br>one ayah.</h2>
-      <div class="cta__foot">
-        <p>Early access opens with the workbench, the fork tree and the live session queue. Scholars and researchers: write to the same address and say what you would review.</p>
-        <a class="btn btn--dark" href="mailto:salam@aasaar.tech?subject=AASAAR%20early%20access">Request early access</a>
-      </div>
-    </div>
-  </section>
-
+<section class="wrap"><div class="cta" id="join">
+  <div class="cta__text">
+    <h2>Which ayah would you start with?</h2>
+    <form class="joinform" data-waitlist data-source="note" action="https://formspree.io/f/mdeelbjo" method="post">
+      <div class="chips" id="ayahs"></div>
+      <label class="sr" for="q">Your question</label>
+      <input id="q" name="question" maxlength="240" placeholder="Your question under it (optional)">
+      <div class="quick"><label class="sr" for="e">Your email</label><input id="e" name="email" type="email" required autocomplete="email" placeholder="you@example.com"><button class="btn btn--light" type="submit">Hold my place</button></div>
+      <p class="status" role="status"></p>
+    </form>
+  </div>
+  <div class="panel cta__card"><div class="row"><b id="c-ref">Adh-Dhariyat 51:47</b><span class="tag tag--g">Your first note</span></div><p class="ayah" lang="ar" dir="rtl" id="c-ar"></p><p class="tr" id="c-tr"></p><p class="q" id="c-q">What would you go and find out?</p></div>
+</div></section>
 </main>
 
-<footer class="foot" data-bg="#191919" data-ink="#ffffff">
-  <div class="wrap foot__in">
-    <div class="foot__top">
-      <div class="foot__reach">
-        <a class="foot__mail" href="mailto:salam@aasaar.tech">salam@aasaar.tech</a>
-        <p>For students, scholars and researchers. One address, answered by a person.</p>
-      </div>
-      <nav class="foot__cols" aria-label="Footer">
-        <div>
-          <a href="#premise">The premise</a>
-          <a href="#workbench">The workbench</a>
-          <a href="#method">The method</a>
-          <a href="#output">The output</a>
-          <a href="#refusals">The refusals</a>
-        </div>
-        <div>
-          <a href="#questions">Questions</a>
-          <a href="#access">Early access</a>
-          <a href="#top">Back to the top</a>
-        </div>
-      </nav>
-    </div>
-
-    <div class="foot__legal">
-      <p>AASAAR is not affiliated with any sect, party or institution.</p>
-      <p>© 2026 AASAAR</p>
-    </div>
-
-    <p class="foot__credits">
-      Pictures, all public domain or openly licensed, and none of them ours:
-      <a href="https://www.artic.edu/artworks/451689" rel="noopener">Leaf with Arabic Prayers</a>, Ahmad Nairizi, 1714, CC0, The Metropolitan Museum of Art ·
-      <a href="https://www.artic.edu/artworks/28410" rel="noopener">Page from a Qur'an Manuscript</a>, 10th century, CC0, Art Institute of Chicago ·
-      <a href="https://www.metmuseum.org/art/collection/search/207816" rel="noopener">Celestial globe</a>, Willem Jansz Blaeu, after 1621, CC0, The Metropolitan Museum of Art ·
-      <a href="https://www.artic.edu/artworks/90589" rel="noopener">Astrolabe</a>, Qajar, CC0, Art Institute of Chicago ·
-      <a href="https://commons.wikimedia.org/w/index.php?curid=18142669" rel="noopener">Shah-i-Zinda tilework</a>, Patrick Ringgenberg, CC BY 3.0, via Wikimedia Commons.
-    </p>
-
-    <p class="foot__word" aria-hidden="true">AASAAR</p>
-  </div>
+<footer class="foot wrap">
+  <div><p class="foot__name">AASAAR</p><p>Named for <i>athāratin min ‘ilm</i>, a trace of knowledge, in Al-Ahqaf 46:4.</p></div>
+  <nav aria-label="Footer"><a href="#tag">Product</a><a href="#record">The record</a><a href="#refusals">Refusals</a><a href="#questions">Questions</a><a href="#join">Join the waitlist</a></nav>
+  <details class="credits"><summary>Picture credits</summary><p>Manuscripts: public domain, via Wikimedia Commons. Years are when each work was written; several pages are later copies. The reel includes the first image of a black hole: Event Horizon Telescope Collaboration, CC BY 4.0, and public domain images from NASA, ESA and CSA.</p></details>
 </footer>
-
-<script src="assets/site.js"></script>
+<script src="main.js"></script>
 </body>
 </html>

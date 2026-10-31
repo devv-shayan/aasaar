@@ -2,10 +2,11 @@
 const WAITLIST_ENDPOINT = 'https://formspree.io/f/mdeelbjo';
 
 const AYAT = [
-  { ref: '51:47', name: 'Adh-Dhariyat 51:47', ar: 'وَالسَّمَاءَ بَنَيْنَاهَا بِأَيْدٍ وَإِنَّا لَمُوسِعُونَ', tr: '“We built the heaven with might, and We are expanding it.”' },
-  { ref: '46:4', name: 'Al-Ahqaf 46:4', ar: 'أَوْ أَثَارَةٍ مِّنْ عِلْمٍ إِن كُنتُمْ صَادِقِينَ', tr: '“…or some trace of knowledge, if you are truthful.”' },
-  { ref: '12:105', name: 'Yusuf 12:105', ar: 'وَكَأَيِّن مِّنْ آيَةٍ فِي السَّمَاوَاتِ وَالْأَرْضِ يَمُرُّونَ عَلَيْهَا وَهُمْ عَنْهَا مُعْرِضُونَ', tr: '“How many signs in the heavens and the earth they pass by, turning away from them.”' },
   { ref: '29:20', name: 'Al-Ankabut 29:20', ar: 'قُلْ سِيرُوا فِي الْأَرْضِ فَانظُرُوا كَيْفَ بَدَأَ الْخَلْقَ', tr: '“Say: travel through the earth and see how He began creation.”' },
+  { ref: '41:53', name: 'Fussilat 41:53', ar: 'سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنفُسِهِمْ', tr: '“We will show them Our signs in the horizons and within themselves.”' },
+  { ref: '12:105', name: 'Yusuf 12:105', ar: 'وَكَأَيِّن مِّنْ آيَةٍ فِي السَّمَاوَاتِ وَالْأَرْضِ يَمُرُّونَ عَلَيْهَا وَهُمْ عَنْهَا مُعْرِضُونَ', tr: '“How many signs in the heavens and the earth they pass by, turning away from them.”' },
+  { ref: '3:191', name: 'Aal-Imran 3:191', ar: 'وَيَتَفَكَّرُونَ فِي خَلْقِ السَّمَاوَاتِ وَالْأَرْضِ', tr: '“…and they reflect on the creation of the heavens and the earth.”' },
+  { ref: '12:47', name: 'Yusuf 12:47', ar: 'قَالَ تَزْرَعُونَ سَبْعَ سِنِينَ دَأَبًا', tr: '“He said: you will plant for seven years consecutively.”' },
 ];
 
 // The stepped edge into and out of the dark section: a fixed pattern, so every visit matches.

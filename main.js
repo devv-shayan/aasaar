@@ -69,7 +69,7 @@ document.querySelectorAll('[data-waitlist]').forEach((f) => {
 const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 // Parts of each section arrive in turn as the section enters.
-const GROUPS = ['.hero > div:first-child > :not(.status)', '.names span', '.center > *', '.feature__head', '.points li', '.dark__head', '.dark video', '.three p', '.tiles img', '.record > div:last-child', '.refuse h2', '.grid3 p', '.faq h2', '.faq details', '.cta__text > *', '.cta__card'];
+const GROUPS = ['.hero > div:first-child > :not(.status)', '.names span', '.center > *', '.feature__head', '.points li', '.lenses p', '.dark__head', '.dark video', '.three p', '.dark__line', '.tiles img', '.record > div:last-child', '.refuse h2', '.grid3 p', '.faq h2', '.faq details', '.cta__text > *', '.cta__card'];
 const seen = new IntersectionObserver((entries) => {
   for (const e of entries) if (e.isIntersecting) { e.target.classList.add('in'); seen.unobserve(e.target); }
 }, { rootMargin: '0px 0px -8% 0px' });

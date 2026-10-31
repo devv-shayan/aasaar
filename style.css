@@ -82,13 +82,18 @@ dl{display:grid;grid-template-columns:6em 1fr;gap:8px 12px}dt{color:var(--soft)}
 .foot__name{font:800 44px/1 "Inter Tight",sans-serif;letter-spacing:-.045em;color:var(--ink);margin-bottom:10px}
 .foot nav{display:grid;gap:6px}.foot nav a{text-decoration:none}.credits summary{cursor:pointer}
 
+.center--line{padding:24px 0 72px}
+.lenses{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:40px;color:var(--soft);font-size:16px}.lenses b{display:block;color:var(--ink)}
+.dark__line{margin-top:64px;text-align:center;font-size:clamp(46px,6.6vw,96px)}
+.record__line{font:400 clamp(24px,2.3vw,32px)/1.15 var(--serif);color:var(--ink)!important}
+
 @media (max-width:900px){
   .bar nav,.bar .btn--ghost{display:none}.brand{margin-right:auto}
   .hero,.record,.faq,.cta,.foot{grid-template-columns:minmax(0,1fr)}.hero{padding:44px 0}
   .stack{height:450px}.p-a,.p-b,.p-c{width:92%}
   .feature__body,.feature__body--flip{grid-template-columns:minmax(0,1fr)}.feature__body--flip .points{order:2}
   .feature__head,.dark__head{display:block}.dark__head .btn,.feature__head .btn{margin-top:16px}
-  .three,.grid3{grid-template-columns:1fr}.names{gap:12px 20px;justify-content:flex-start}
+  .three,.grid3,.lenses{grid-template-columns:1fr}.names{gap:12px 20px;justify-content:flex-start}
 }
 @media (max-width:520px){.quick{flex-direction:column}.pixels{grid-template-columns:repeat(16,1fr)}}
 

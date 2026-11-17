@@ -88,7 +88,7 @@ dl{display:grid;grid-template-columns:6em 1fr;gap:8px 12px}dt{color:var(--soft)}
 .record__line{font:400 clamp(24px,2.3vw,32px)/1.15 var(--serif);color:var(--ink)!important}
 
 .post-link{display:grid;grid-template-columns:1fr 1fr;align-items:center;background:var(--tone);text-decoration:none;transition:background-color .15s}
-.post-link:hover{background:var(--line)}.post-link:hover .more{text-decoration:underline}
+.post-link:hover{background:var(--line)}.posts{display:grid;gap:24px}.post-link:hover .more{text-decoration:underline}
 .post-link img{width:100%;height:100%;aspect-ratio:4/3;object-fit:cover}
 .post-link__text{padding:clamp(24px,4vw,56px)}
 .post-link__title{font:400 clamp(32px,3.6vw,50px)/1.05 var(--serif);letter-spacing:-.02em}

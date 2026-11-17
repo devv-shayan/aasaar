@@ -118,7 +118,7 @@ dl{display:grid;grid-template-columns:6em 1fr;gap:8px 12px}dt{color:var(--soft)}
 
 @media (max-width:900px){
   .post-link,.post-head,.post-body{grid-template-columns:minmax(0,1fr)}.post-head{gap:28px;padding:44px 0 32px}.post-body{gap:32px}
-  .toc{position:static;order:-1}
+  .toc{position:static;order:-1}.toc--end{order:0}
   .bar nav,.bar .btn--ghost{display:none}.brand{margin-right:auto}
   .hero,.record,.faq,.cta,.foot{grid-template-columns:minmax(0,1fr)}.hero{padding:44px 0}
   .stack{height:450px}.p-a,.p-b,.p-c{width:92%}
@@ -168,7 +168,7 @@ mark{background-repeat:no-repeat;background-size:100% 100%}
 /* blog figures */
 .fig{margin:28px 0}.fig img{width:100%}
 .fig figcaption{margin-top:8px;color:var(--soft);font-size:15px;line-height:1.4}
-.fig--side{float:right;width:42%;margin:6px 0 16px 28px}.prose h2{clear:both}.prose blockquote{display:flow-root}
+.fig--side{float:right;width:42%;margin:6px 0 16px 28px}.prose h2{clear:both}.prose blockquote{display:flow-root}.toc .ayah{margin:6px 0 4px;text-align:right}.toc p{margin-bottom:16px}
 .notes{padding:20px 24px 28px;background:var(--tone)}.notes .ayah{margin:0 0 12px}
 .notes__row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
 .prose .notes__row p{margin:0;padding:14px;background:var(--tint2);font-size:16px;line-height:1.35;rotate:-1.5deg}

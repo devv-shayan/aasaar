@@ -1,0 +1,16 @@
+# AASAAR
+
+> AASAAR is research infrastructure for the Quran: start from an ayah, branch it, and take it through a scholar and a scientist to a published research paper.
+
+AASAAR is in development and has a waitlist at https://aasaar.tech/#join. Each research paper is reviewed by a scholar of classical Arabic, who checks the root and the context, and a researcher in the field, who checks the method, the data and the maths. There are no sect tags on the platform.
+
+## About
+
+- [AASAAR home](https://aasaar.tech/): What AASAAR is, how it works, and answers to common questions.
+- [Why we're called AASAAR](https://aasaar.tech/why-aasaar/): AASAAR comes from āthār, traces, the root of athāratin min ʿilm in Quran 46:4: the challenge to bring a trace of knowledge.
+
+## Blog
+
+- [Quran and Science: Is the Quran a Science Book?](https://aasaar.tech/blog/quran-and-science/): The Quran isn't a textbook, but "not a science book" is the wrong conclusion. Why research from it never closes, and why it should start with us.
+- [How to Study and Research the Quran: A Beginner's Method](https://aasaar.tech/blog/how-to-study-the-quran/): Start with one ayah, check the root, ask a real question and take it to the field. An eight-step method for studying and researching the Quran.
+- [Quran Research Topics for Students: 20 Ideas to Start From](https://aasaar.tech/blog/quran-research-topics/): Twenty research topics that start from an ayah, each with a clear question and the field that can test it.

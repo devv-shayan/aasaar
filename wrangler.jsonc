@@ -3,6 +3,8 @@
   "name": "aasaar",
   "main": "worker.js",
   "compatibility_date": "2026-11-01",
+  // Pull requests get a preview link from Workers Builds.
+  "preview_urls": true,
   "routes": [
     { "pattern": "aasaar.tech", "custom_domain": true },
     { "pattern": "www.aasaar.tech", "custom_domain": true }

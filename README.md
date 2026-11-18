@@ -8,7 +8,7 @@ AASAAR is named for *athāratin min ʿilm*, "a trace of knowledge," in Al-Ahqaf 
 
 ## What's in this repo
 
-The site is plain HTML, CSS and JavaScript, published with GitHub Pages from `main`.
+The site is plain HTML, CSS and JavaScript, served by a Cloudflare Worker (`wrangler.jsonc`, `worker.js`) at aasaar.tech. Every merge to `main` deploys automatically through Cloudflare Workers Builds; pull requests get a preview build.
 
 | Path | What it is |
 | --- | --- |

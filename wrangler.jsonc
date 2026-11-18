@@ -1,0 +1,15 @@
+{
+  // AASAAR site: static files served from the repo root by a Cloudflare Worker.
+  "name": "aasaar",
+  "main": "worker.js",
+  "compatibility_date": "2026-11-01",
+  "routes": [
+    { "pattern": "aasaar.tech", "custom_domain": true },
+    { "pattern": "www.aasaar.tech", "custom_domain": true }
+  ],
+  "assets": {
+    "directory": ".",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  }
+}

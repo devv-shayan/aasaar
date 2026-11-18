@@ -2,7 +2,7 @@
 
 Research infrastructure for the Quran. Start from an ayah, branch it with other students, and take it through a scholar and a scientist to a published research paper.
 
-**Website:** https://devv-shayan.github.io/aasaar/
+**Website:** https://aasaar.tech/
 
 AASAAR is named for *athāratin min ʿilm*, "a trace of knowledge," in Al-Ahqaf 46:4.
 

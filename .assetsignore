@@ -1,0 +1,11 @@
+.git
+.gitignore
+.DS_Store
+.taste-skill
+.wrangler
+node_modules
+.assetsignore
+wrangler.jsonc
+worker.js
+README.md
+CNAME

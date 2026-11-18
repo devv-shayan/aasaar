@@ -2,13 +2,13 @@
 
 Research infrastructure for the Quran. Start from an ayah, branch it with other students, and take it through a scholar and a scientist to a published research paper.
 
-**Website:** https://devv-shayan.github.io/aasaar/
+**Website:** https://aasaar.tech/
 
 AASAAR is named for *athāratin min ʿilm*, "a trace of knowledge," in Al-Ahqaf 46:4.
 
 ## What's in this repo
 
-The site is plain HTML, CSS and JavaScript, published with GitHub Pages from `main`.
+The site is plain HTML, CSS and JavaScript, served by a Cloudflare Worker (`wrangler.jsonc`, `worker.js`) at aasaar.tech. Every merge to `main` deploys automatically through Cloudflare Workers Builds; pull requests get a preview build.
 
 | Path | What it is |
 | --- | --- |

@@ -175,3 +175,6 @@ mark{background-repeat:no-repeat;background-size:100% 100%}
 .prose .notes__row p:nth-child(2){rotate:1deg;translate:0 6px}.prose .notes__row p:nth-child(3){rotate:-.5deg}
 .notes__row b{display:block;font-size:24px;line-height:1.7}
 @media (max-width:600px){.fig--side{float:none;width:100%;margin:24px 0}.fig--half{max-width:none}.topics thead{display:none}.topics tr{display:block;padding:14px 0;border-bottom:1px solid var(--line)}.topics td{display:block;width:auto!important;padding:2px 0;border:0}.topics td:first-child{color:var(--soft);font-size:15px}.topics td:nth-child(2){font-weight:500}.topics td[data-label]{color:var(--soft);font-size:15px}.topics td[data-label]::before{content:attr(data-label)}.notes__row{grid-template-columns:1fr}}
+
+/* Honorific sign (rahimahullah) after a scholar's name */
+.rh { font-family: "Amiri Quran", serif; font-size: 1.5em; line-height: 0; display: inline-block; vertical-align: -.35em; margin: 0 .12em 0 .02em; }

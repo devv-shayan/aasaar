@@ -7,5 +7,6 @@ node_modules
 .assetsignore
 wrangler.jsonc
 worker.js
+markdown.js
 README.md
 CNAME

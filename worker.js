@@ -16,7 +16,7 @@ export default {
     const read = request.method === 'GET' || request.method === 'HEAD';
     if (!read || !prefersMarkdown(request.headers.get('Accept'))) {
       const res = await env.ASSETS.fetch(request);
-      return isHtml(res) ? withVary(res) : res; // the same URL can also answer in Markdown
+      return isHtml(res) ? forBrowsers(res, url) : res;
     }
 
     // An agent asked for Markdown: load the page's HTML and convert it.
@@ -36,9 +36,13 @@ export default {
 
 const isHtml = (res) => (res.headers.get('Content-Type') || '').includes('text/html');
 
-function withVary(res) {
+// HTML pages: the same URL can also answer in Markdown, and Link headers (RFC 8288) point
+// agents to the site summary for LLMs and to that Markdown copy.
+function forBrowsers(res, url) {
   const out = new Response(res.body, res);
   out.headers.append('Vary', 'Accept');
+  out.headers.append('Link', '</llms.txt>; rel="describedby"; type="text/plain"');
+  out.headers.append('Link', `<${url.origin}${url.pathname}>; rel="alternate"; type="text/markdown"`);
   return out;
 }
 
